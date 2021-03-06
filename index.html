@@ -12,9 +12,10 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/main.css">
 </head>
 
-<body class="bg-info">
+<body>
   
   <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0">
    
@@ -28,7 +29,8 @@
           <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#">Boards</a>
+          <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#">
+            <i class='fab fa-trello'></i> Boards</a>
         </li>
       </ul>
   <form class="form-inline" action="">
@@ -62,7 +64,7 @@
   </nav>
 
 
-  <nav class="navbar navbar-expand-md bg-info border-top border-bottom navbar-dark p-0">
+  <nav class="navbar navbar-expand-md bg-light border-top border-bottom navbar-dark p-0">
     
     <div class="container">
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -74,7 +76,7 @@
           <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
             <i class="far fa-star" aria-hidden="true"></i></a>
         </li>
-        <li class="nav-item text-white p-2">
+        <li class="nav-item p-2">
           private team
           </li>
           <li class="nav-item">
@@ -105,9 +107,85 @@
   </div>
   </nav>
 
-<div class="board-canvas">
 
+<div class="p-1 text-center" id="main">
+<section class="d-flex align-items-start h-100 overflow-auto" id="sect-card" data-sortable="sortable">
+  <div class="card shadow rounded m-2 p-0 pb-2">
+    <div class="card-header d-flex justify-content-between border-0 p-0">
+      <p class="mb-0 p-1">tasks</p>
+      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+    <div draggable="true">
+      <div class="card-body rounded bg-white shadow m-1 mb-2" draggable="true">
+        farah
+        </div>
+      
+    </div>
+    <div class="card-footer d-flex justify-content-between border-0 p-2">
+   <button class="btn btn-link text-dark">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add a card
+   </button>
+   <button class="btn"></button>
+    </div>
+  </div>
+
+  <div class="card shadow rounded m-2 p-0 pb-2">
+    <div class="card-header d-flex justify-content-between border-0 p-0">
+      <p class="mb-0 p-1">in progress</p>
+      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+    <div draggable="true">
+      
+    </div>
+    <div class="card-footer d-flex justify-content-between border-0 p-2">
+   <button class="btn btn-link text-dark">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add a card
+   </button>
+   <button class="btn"><i class="fa fa-" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+  <div class="card shadow rounded m-2 p-0 pb-2">
+    <div class="card-header d-flex justify-content-between border-0 p-0">
+      <p class="mb-0 p-1">evaluation</p>
+      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+    <div draggable="true">
+   
+    </div>
+    <div class="card-footer d-flex justify-content-between border-0 p-2">
+   <button class="btn btn-link text-dark">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add a card
+   </button>
+   <button class="btn"><i class="fa fa-" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="card shadow rounded m-2 p-0 pb-2">
+    <div class="card-header d-flex justify-content-between border-0 p-0">
+      <p class="mb-0 p-1">Done</p>
+      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+    <div draggable="true">
+   
+    </div>
+    <div class="card-footer d-flex justify-content-between border-0 p-2">
+   <button class="btn btn-link text-dark">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add a card
+   </button>
+   <button class="btn"><i class="fa fa-" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+
+  <div class="card shadow rounded m-2 p-0 pb-2">
+   
+    <div class="card-header d-flex justify-content-between border-0 p-0">
+      <button class="btn btn-link text-dark"><i class="fas fa-plus"></i> Add another list</button>
+    </div>
+  </div>
+</section>
 </div>
+
 
 
 
