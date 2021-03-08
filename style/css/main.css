@@ -10,4 +10,30 @@
     max-width: 270px;
     height: auto;
     background: rgb(236, 234, 234);
+    cursor: move;
+}
+.card.over {
+    border: 3px dotted #666;
+  }
+  
+#img-avt{
+    width: 30px;
+    border-radius: 20px;
+}
+
+  #add-list{
+      display: none;
+  }
+
+  #add-card{
+    display: none;
+}
+#add-card1{
+    display: none;
+}
+#add-card2{
+    display: none;
+}
+#add-card3{
+    display: none;
 }
