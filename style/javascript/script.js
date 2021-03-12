@@ -1,18 +1,27 @@
-
- function showform(){
-   document.getElementById("add-list").style.display="block";
-   
+function showform(){
+  document.getElementById("list").style.display="none";
+   document.getElementById("add-list").style.display="block"; 
  }
- function showform1(){
-  document.getElementById("add-card").style.display="block";
-}
-function showform2(){
-  document.getElementById("add-card1").style.display="block";
-}
-function showform3(){
-  document.getElementById("add-card2").style.display="block";
+ function cancelform(){
+  document.getElementById("list").style.display="block";
+  document.getElementById("add-list").style.display="none"; 
 }
 function showform4(){
+  document.getElementById("hide3").style.display="none";
   document.getElementById("add-card3").style.display="block";
 }
+function cancelform1(){
+  document.getElementById("hide3").style.display="block";
+  document.getElementById("add-card3").style.display="none";   
+}
 
+function add(){
+  var lI = document.createElement("li");
+  lI.style.background="white";
+  lI.style.width="268px";
+  lI.style.listStyleType="none";
+  var input = document.getElementById("inpt11").Value;
+  var text = document.createTextNode(input);
+  lI.appendChild(text);
+  document.getElementById("myList").appendChild(lI);
+}

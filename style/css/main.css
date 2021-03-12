@@ -1,39 +1,28 @@
 #main{
     height: 100vh;
-    background: rgb(56, 114, 126);
+    background: rgb(134, 199, 241);
+    
 }
 #sect-card{
     position: relative;
 }
-.card{
+.list-card{
     min-width: 270px;
     max-width: 270px;
     height: auto;
-    background: rgb(236, 234, 234);
+    background: rgb(250, 251, 252);
     cursor: move;
 }
-.card.over {
-    border: 3px dotted #666;
-  }
-  
+
+
 #img-avt{
     width: 30px;
     border-radius: 20px;
 }
+#add-list{
+    display: none;
+}
 
-  #add-list{
-      display: none;
-  }
-
-  #add-card{
-    display: none;
-}
-#add-card1{
-    display: none;
-}
-#add-card2{
-    display: none;
-}
 #add-card3{
     display: none;
 }

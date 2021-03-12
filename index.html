@@ -12,91 +12,92 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/css/main.css">
+  <link rel="stylesheet" href="style/css/main.css">
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0">
-   
+
     <div class="container">
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white bg-secondary rounded m-1 "><i class='fas fa-th'></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#"><i class="fa fa-home"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#">
+              <i class='fab fa-trello'></i> Boards</a>
+          </li>
+        </ul>
+        <form class="form-inline" action="">
+          <input class="form-control mr-sm-2" type="text" placeholder="jump to">
+          <button class="btn " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class='fab fa-trello'></i> Farah-Trello</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white bg-secondary rounded m-1 " ><i class='fas fa-th'></i></a>
+          <a class="nav-link text-white bg-secondary rounded m-1 " aria-current="page" href="#">
+            <i class="fa fa-plus" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="nav-link text-white  bg-secondary  rounded m-1" aria-current="page" href="#">
+            <i class="fa fa-info-circle" aria-hidden="true"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white bg-secondary rounded m-1" aria-current="page" href="#">
-            <i class='fab fa-trello'></i> Boards</a>
+          <a class="nav-link text-white bg-secondary rounded m-1" id="bell" aria-current="page" href="#">
+            <i class="fa fa-bell" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white m-0" id="bell" aria-current="page" href="#">
+            <img src="image/img_avatar2.png" id="img-avt" alt="Avatar"> </a>
         </li>
       </ul>
-  <form class="form-inline" action="">
-    <input class="form-control mr-sm-2" type="text" placeholder="jump to">
-    <button class="btn " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-  </form>
-</div> 
-</div>
-<div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class='fab fa-trello'></i> Farah-Trello</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>  
-    <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white bg-secondary rounded m-1 " aria-current="page" href="#">
-              <i class="fa fa-plus" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white  bg-secondary  rounded m-1" aria-current="page" href="#">
-              <i class="fa fa-info-circle" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white bg-secondary rounded m-1" id="bell" aria-current="page" href="#">
-              <i class="fa fa-bell" aria-hidden="true"></i></a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link text-white m-0" id="bell" aria-current="page" href="#">
-              <img src="image/img_avatar2.png" id="img-avt" alt="Avatar" > </a>
-          </li>   
-        </ul>
     </div>
   </nav>
 
 
   <nav class="navbar navbar-expand-md bg-light border-top border-bottom navbar-dark p-0">
-    
+
     <div class="col-10">
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item text-white p-2">
-        
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
-            <i class="far fa-star" aria-hidden="true"></i></a>
-        </li>
-        <li class="nav-item p-2">
-          private team
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item text-white p-2">
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
+              <i class="far fa-star" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item p-2">
+            private team
           </li>
           <li class="nav-item">
             <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
               <i class='fas fa-user-friends'></i>
-            Team visible</a>
+              Team visible</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
-             Invite 
+              Invite
             </a>
           </li>
-      </ul>
-</div> 
-</div> 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">  
+        </ul>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link text-white bg-dark rounded m-1" id="bell" aria-current="page" href="#">
@@ -107,124 +108,61 @@
             <i class="fas fa-ellipsis-h"></i> Show Menu</a>
         </li>
       </ul>
-  </div>
+    </div>
   </nav>
 
+  <!--cards-->
+  <div class=" text-center p-1" id="main">
+    <div class="d-flex align-items-start h-100 " id="sect-card">
+      <!-- first list -->
+      <div class="list-card shadow rounded m-2 p-0">
+        <span class="">
+          <p class="mb-0 p-1 float-left">Task</p>
+          <button class="btn btn-link text-dark float-right"><i class="fas fa-ellipsis-h"></i></button>
+        </span>
+        <div class=" overflow-auto">
+          <ul id="myList" class="p-0">
 
-<div class=" p-1 text-center" id="main">
-<div class="box d-flex align-items-start h-100 overflow-auto" id="sect-card" >
-  <div class="card shadow rounded m-2 p-0 pb-2" id="cards" draggable="true">
-    <div class="card-header d-flex justify-content-between border-0 p-0">
-      <p class="mb-0 p-1">tasks</p>
-      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
-    </div>
-    
-      <div class="card-body " id="add-card" >
-        <form class="" id="form-inp">
-          <input type="text" class="p-3" placeholder="enter">
-          <button class="bg-primary m-1">add card</button>
-        </form>
+          </ul>
         </div>
-    <div class="card-footer d-flex justify-content-between border-0 p-2">
-   <button class="btn btn-link text-dark" onclick="showform1()">
-    <i class="fa fa-plus" aria-hidden="true"></i> Add a card
-   </button>
-   <button class="btn"></button>
+        <div id="hide3" class="">
+          <button class="btn btn-link text-dark align-items-end " onclick="showform4()">
+            <i class="fa fa-plus" aria-hidden="true"></i> Add a card
+          </button>
+        </div>
+        <form class="" id="add-card3">
+          <input type="text" class="p-4" id="inpt11" placeholder="enter">
+          <button class="bg-primary m-1 float-left" onclick="add()">add card</button>
+          <button class="m-1 bg-primary float-left" onclick="cancelform1()">cancel</button>
+        </form>
+      </div>
+
+      <!-- add another list -->
+      <div class="list-card shadow rounded m-2 p-0">
+        <span id="list">
+          <a class="btn text-dark " id="btn-add" href="#" onclick="showform()">
+            <i class="fas fa-plus"></i> Add another list</a>
+        </span>
+        <form id="add-list">
+          <input type="text" class="p-3 overflow-auto m-2">
+          <input type="submit" class="m-1 w-50 bg-primary" value="Add">
+          <button class="m-1 bg-primary" onclick="cancelform()">cancel</button>
+        </form>
+      </div>
+
     </div>
-  </div>
 
-  <div class="card shadow rounded m-2 p-0 pb-2" id="cards" draggable="true">
-    <div class="card-header d-flex justify-content-between border-0 p-0">
-      <p class="mb-0 p-1">in progress</p>
-      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
-    </div>
-    <div class="card-body" id="add-card1" >
-      <form class="" id="form-inp">
-        <input type="text" class="p-3" placeholder="enter">
-        <button class="bg-primary m-1">add card</button>
-      </form>
-    </div>
-    <div class="card-footer d-flex justify-content-between border-0 p-2">
-      <button class="btn btn-link text-dark" onclick="showform2()">
-       <i class="fa fa-plus" aria-hidden="true"></i> Add a card
-      </button>
-      <button class="btn"></button>
-       </div>
-  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/style/javascript/script.js"></script>
 
-  <div class="card shadow rounded m-2 p-0 pb-2" id="cards" draggable="true">
-    <div class="card-header d-flex justify-content-between border-0 p-0">
-      <p class="mb-0 p-1">evaluation</p>
-      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
-    </div>
-    <div class="card-body" id="add-card2" >
-      <form class="" id="form-inp">
-        <input type="text" class="p-3" placeholder="enter">
-        <button class="bg-primary m-1">add card</button>
-      </form>
-    </div>
-    <div class="card-footer d-flex justify-content-between border-0 p-2">
-      <button class="btn btn-link text-dark" onclick="showform3()">
-       <i class="fa fa-plus" aria-hidden="true"></i> Add a card
-      </button>
-      <button class="btn"></button>
-       </div>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 
-  <div class="card shadow rounded m-2 p-0 pb-2" id="cards" draggable="true">
-    <div class="card-header d-flex justify-content-between border-0 p-0">
-      <p class="mb-0 p-1">Done</p>
-      <button class="btn btn-link text-dark"><i class="fas fa-ellipsis-h"></i></button>
-    </div>
-    <div class="card-body" id="add-card3" >
-      <form class="" id="form-inp">
-        <input type="text" class="p-3" placeholder="enter">
-        <button class="bg-primary m-1">add card</button>
-      </form>
-    </div>
-    <div class="card-footer d-flex justify-content-between border-0 p-2">
-      <button class="btn btn-link text-dark" onclick="showform4()">
-       <i class="fa fa-plus" aria-hidden="true"></i> Add a card
-      </button>
-      <button class="btn"></button>
-       </div>
-  </div>
-
-
-  <div class="card shadow rounded m-2 p-0 pb-2 dialog-form-list"id="cards" draggable="true">
-    <div class="card-body rounded "id="add-list" >
-      <form class="" id="formList">
-        
-        <input type="text" class="p-3" name="listname" id="listname" 
-         class="text" placeholder="add list title">
-        <input type="submit" class="m-1 bg-primary w-50">
-      </form>
-    </div>
-    <div class="card-footer d-flex justify-content-between border-0 p-0">
-      <a class="btn text-dark " id="btn-add" href="#" onclick="showform()">
-        <i class="fas fa-plus"></i> Add another list</a>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="/style/javascript/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-    
 </body>
 
 </html>
