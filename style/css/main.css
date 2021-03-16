@@ -1,6 +1,6 @@
 #main{
     height: 100vh;
-    background: rgb(134, 199, 241);
+    background: rgb(164, 219, 255);
     
 }
 #sect-card{
@@ -11,7 +11,6 @@
     max-width: 270px;
     height: auto;
     background: rgb(250, 251, 252);
-    cursor: move;
 }
 
 
@@ -26,3 +25,40 @@
 #add-card3{
     display: none;
 }
+#card-title{
+display: none;
+}
+#inpt11{
+    display: none;
+}
+#inpp{
+    padding: 1.5rem;
+}
+.dropbtn {
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd}
+  .show {display:block;}
