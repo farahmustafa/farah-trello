@@ -97,10 +97,22 @@ p{
 #aadbtn{
   background: rgb(50, 177, 50);
   color: white;
- width: 60px;
+ width: 100px;
+ margin-left: -72px;
 }
 #closbttn{
   background: transparent;
   border: 0;
   font-size: 30px;
+}
+#lii{
+  background: white;
+  overflow: auto;
+  width: 257px;
+  top: 17px;
+  position: relative;
+  margin: 2px;
+  margin-left: -41px;
+  margin-bottom: 12px;
+  padding: 8px;
 }

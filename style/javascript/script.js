@@ -47,6 +47,11 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
+
+var ulcard = document.createElement("ul");
+Div.appendChild(ulcard);
+ulcard.setAttribute("id","listcard");
+
 var button = document.createElement("button");
 var btnTxt = document.createTextNode("+ Add anther card");
 button.className= "btn1";
@@ -79,7 +84,7 @@ function showf(inputValue){
   closbtn.setAttribute("id","closbttn");
 
   showDiv.setAttribute("id","formm");
-  add.textContent ="Add";
+  add.textContent ="Add card";
   add.setAttribute("id","aadbtn");
   showDiv.appendChild(title);
   showDiv.appendChild(details);
@@ -96,5 +101,18 @@ closbtn.addEventListener('click', function() {
   document.getElementById("formm").style.display="none";
   
 });
+add.addEventListener('click', function() {
+  var lI = document.createElement("li");
+  lI.setAttribute("id","lii");
+  var input = document.getElementById("title_edt").value;
+  var text = document.createTextNode(input);
+  lI.appendChild(text);
+  if (input === '') {
 
-}}
+  } else {
+    document.getElementById("listcard").append(lI);
+  }
+  document.getElementById("title_edt").value = "";
+}, false);
+}
+}
