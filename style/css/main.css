@@ -83,3 +83,24 @@ p{
   float: left;
   font-size: 18px;
 }
+#formm{
+  display: none;
+  margin-top: 40px;
+}
+#title_edt{
+  margin-bottom: 4px;
+}
+#detail{
+ margin-bottom: 5px;
+  padding: 5px;
+}
+#aadbtn{
+  background: rgb(50, 177, 50);
+  color: white;
+ width: 60px;
+}
+#closbttn{
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+}

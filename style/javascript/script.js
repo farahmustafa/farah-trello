@@ -57,6 +57,44 @@ button.addEventListener('click', function() {
   showf(parag);
 }, false);
 
+function showf(inputValue){
+  var addbtn = document.getElementsByClassName("btn1");
+  var i;
 
+  var showDiv = document.createElement("div");
+  var title = document.createElement("input");
+  var details = document.createElement("input");
+  var closbtn = document.createElement("button");
+  var clostxt = document.createTextNode("\u00D7");
+  closbtn.appendChild(clostxt);
 
-}
+  var add = document.createElement("button");
+  title.setAttribute("type", "text");
+  title.setAttribute("name", "title");
+  title.setAttribute("id", "title_edt");
+  details.setAttribute("type", "text");
+  details.setAttribute("id", "detail");
+  details.setAttribute("name", "details")
+  details.setAttribute("placeholder", "Enter Card Details...")
+  closbtn.setAttribute("id","closbttn");
+
+  showDiv.setAttribute("id","formm");
+  add.textContent ="Add";
+  add.setAttribute("id","aadbtn");
+  showDiv.appendChild(title);
+  showDiv.appendChild(details);
+  showDiv.appendChild(add);
+  showDiv.appendChild(closbtn);
+  Div.appendChild(showDiv);
+
+  button.addEventListener('click', function() {
+    document.getElementById("formm").style.display="block";
+    document.getElementById("buttn").style.display="none";
+});
+closbtn.addEventListener('click', function() {
+  document.getElementById("buttn").style.display="block";
+  document.getElementById("formm").style.display="none";
+  
+});
+
+}}
