@@ -1,50 +1,62 @@
-function showform() {
-  document.getElementById("list").style.display = "none";
-  document.getElementById("add-list").style.display = "block";
+
+function add1(){
+
+  document.getElementById("add-list").style.display="none";
+  document.getElementById("sect-add").style.display="block";
 }
-function cancelform() {
-  document.getElementById("list").style.display = "block";
-  document.getElementById("add-list").style.display = "none";
+
+function hide(){
+  document.getElementById("sect-add").style.display="none";
+  document.getElementById("add-list").style.display="block";
 }
-function showform1(){
-  document.getElementById("hide3").style.display = "none";
-  document.getElementById("card-title").style.display = "block";
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var Div = document.createElement("div");
+  Div.setAttribute("class","list");
+  var parag = document.createElement("p");
+  parag.setAttribute("id","title_p");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  parag.appendChild(t)
+  Div.appendChild(parag);
+ 
+
+
+  document.getElementById("board").prepend(Div);
+  
+  document.getElementById("myInput").value = "";
+
+  // Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
-function cancelform1() {
-  document.getElementById("hide3").style.display = "block";
-  document.getElementById("card-title").style.display = "none";
+var span = document.createElement("SPAN");
+var txt = document.createTextNode("\u00D7");
+span.className = "close";
+span.appendChild(txt);
+Div.appendChild(span);
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
 }
-function myFunction(){
-  document.getElementById("inpt11").style.display = "block"; 
-  document.getElementById("inpp").style.padding=0;
-  document.getElementById("inpp").style.width="80%";
-}
-function add(){
-  var lI = document.createElement("li");
-  lI.style.background = "white";
-  lI.style.width = "260px";
-  lI.style.listStyleType = "none";
-  lI.style.marginBottom = "3px";
-  lI.style.border = "1px solid";
-  lI.style.padding = "3px";
-  lI.style.position = "relative";
-  lI.style.top = "18px";
-  lI.style.overflow = "auto";
-  var input = document.getElementById("inpp").value;
-  var text = document.createTextNode(input);
-  lI.appendChild(text);
-  document.getElementById("myList").appendChild(lI);
- document.getElementById("head").innerHTML=input;
-  document.getElementById("inpp").value = "";
-  document.getElementById("card-title").style.display="none";
-  document.getElementById("hide3").style.display="block";
-  lI.setAttribute("data-toggle","modal");
-  lI.setAttribute("data-target","#myModal");
-  var parag =document.getElementById("inpt11").value;
-  document.getElementById("descrip").innerHTML=parag;
-}
+var button = document.createElement("button");
+var btnTxt = document.createTextNode("+ Add anther card");
+button.className= "btn1";
+button.appendChild(btnTxt);
+Div.appendChild(button);
+button.setAttribute("id","buttn")
+button.addEventListener('click', function() {
+  showf(parag);
+}, false);
 
 
 
-
-
+}

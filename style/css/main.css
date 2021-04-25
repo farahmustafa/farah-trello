@@ -1,64 +1,85 @@
-#main{
-    height: 100vh;
-    background: rgb(164, 219, 255);
-    
-}
-#sect-card{
-    position: relative;
-}
-.list-card{
-    min-width: 270px;
-    max-width: 270px;
-    height: auto;
-    background: rgb(250, 251, 252);
-}
-
+/* header */
 
 #img-avt{
     width: 30px;
     border-radius: 20px;
 }
-#add-list{
-    display: none;
-}
-
-#add-card3{
-    display: none;
-}
-#card-title{
-display: none;
-}
-#inpt11{
-    display: none;
-}
-#inpp{
-    padding: 1.5rem;
-}
-.dropbtn {
-    color: black;
-    border: none;
-    cursor: pointer;
+  #search {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    content: "";
   }
- 
   
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+  #search:focus {
+    width: 100%;
   }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  /* main section */
+  #main{
+    height: 100vh;
+  
   }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  #board{
+    overflow-x: auto;
+    overflow-y: hidden;
   }
-  .dropdown-content a:hover {background-color: #ddd}
-  .show {display:block;}
+  
+  #addList1{
+    margin: 4px;
+      color: black;
+      background: rgba(255, 254, 254, 0.4);
+      border-radius: 6px;
+      padding: 9px;
+      font-size: 18px;
+      width: 300px;
+      float: right;
+     
+  }
+    .inpt{
+        width: 200px;
+    }
+    #sect-add{
+        display: none;
+    }
+    #add-list{
+      font-size: 15px;
+      padding: 4px;
+    }
+    .list{
+      margin: 4px;
+      color: black;
+      background: rgba(255, 254, 254, 0.4);
+      border-radius: 6px;
+      padding: 9px;
+      font-size: 18px;
+      width: 272px;
+     
+    }
+    .close1{
+      background: transparent;
+      border: 0;
+      font-size: 28px;
+    }
+    
+.close:hover {
+  cursor: pointer;
+  
+}
+.btn1{
+  background: transparent;
+  border: 0;
+ width: 250px;
+ margin-top: 30px;
+}
+.btn1:hover{
+  background: rgb(224, 223, 223);
+ 
+}
+p{
+  float: left;
+  font-size: 18px;
+}

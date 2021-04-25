@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,12 +17,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
 
 </head>
 
-<body>
+<body style="background: rgb(186, 190, 255);">
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark p-0 overflow-hidden">
 
     <div class="container">
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -40,8 +41,8 @@
           </li>
         </ul>
         <form class="form-inline" action="">
-          <input class="form-control mr-sm-2" type="text" placeholder="jump to">
-          <button class="btn " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <input class="form-control mr-sm-2" id="search" type="text" placeholder="jump to..">
+         
         </form>
       </div>
     </div>
@@ -115,105 +116,27 @@
       </ul>
     </div>
   </nav>
+  
+<!-- main  -->
+<section class="droptarget text-center p-1" id="main">
+  <section class="d-flex list-inline-item align-items-start h-100" id="board">
 
-  <!--cards-->
-  <div class=" text-center p-1" id="main">
-    <div class="d-flex align-items-start h-100 " id="sect-card">
-      <!-- first list -->
-      <div class="list-card shadow rounded m-2 p-0">
-        <span class="">
-          <p class="mb-0 p-1 float-left" id="lblTask">Task</p>
-          <div class="dropdown float-right">
-            <button type="button" class="btn btn-light" data-toggle="dropdown">
-              <i class="fa fa-ellipsis-h"></i>
-            </button>
-            <div class="dropdown-menu">
-              <p class="text-center">List Action</p>
-              <hr>
-              <a class="dropdown-item" href="#">Add card..</a>
-              <a class="dropdown-item" href="#">Copy List..</a>
-              <a class="dropdown-item" href="#">Move List..</a>
-              <a class="dropdown-item" href="#">Watch</a>
-              <hr>
-              <a class="dropdown-item" href="#">Move All Cards in This List</a>
-              <a class="dropdown-item" href="#">Archive All cards in This List</a>
-              <hr>
-              <a class="dropdown-item" href="#">Archive This List</a>
-            </div>
-          </div>
-        </span>
-        <ul id="myList" class="p-1">
-
-        </ul>
-        <div id="hide3" class="">
-          <button class="btn btn-link text-dark align-items-end " onclick="showform1()">
-            <i class="fa fa-plus" aria-hidden="true"></i> Add a card
-          </button>
-        </div>
-        <form id="card-title">
-          <input type="text" class="" id="inpp" placeholder="Enter a title for this card"
-         onchange="myFunction()">
-          <input type="text" class="p-4 m-1" id="inpt11" placeholder="enter a description">
-          <a class="btn text-white bg-success m-1 rounded float-left" onclick="add()">add a card</a>
-          <a class="m-2 float-left" onclick="cancelform1()"><i class="fa fa-times"></i></a>
-        </form>
+    <div class="list col-md-2" >
+      <div id="add-list" >
+       <button class="bg-transparent text-left border-0" onclick="add1()">
+         <i class="fa fa-plus"></i> Add anther list
+       </button>
       </div>
-      <!-- list -->
-      <div >
-
+       <div id="sect-add">
+        <input type="text" placeholder="list title" id="myInput" class=" mt-2 p-1 inpt">
+            <button class="btn-success m-1 float-left" onclick="newElement()" > Add list</button>
+            <button type="button" class="close1 float-left" data-dismiss="modal" onclick="hide()">&times;</button>
       </div>
-      <!-- /list -->
-      <!-- add another list -->
-      <div class="list-card shadow rounded m-2 p-0">
-        <span id="list">
-          <a class="btn text-dark " id="btn-add" href="#" onclick="showform()">
-            <i class="fas fa-plus"></i> Add another list</a>
-        </span>
-        <form id="add-list">
-          <input type="text" id="list-btn" class="p-3 overflow-auto m-2">
-          <input type="submit" class="m-1 bg-success rounded text-white float-left" onclick="addlist()" value="Add">
-          <a class="m-1 float-left" onclick="cancelform()"><i class="fa fa-times"></i></a>
-        </form>
       </div>
-    </div>
+   
+  </section>
+</section>
 
-
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-        
-        
-          
-          <!-- Modal body -->
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 id="head" class="text-left m-2"></h4>
-            <br>
-            <div class="text-left">
-           <i class="fa fa-align-left"></i> Description
-           <button class="btn-light">Edit</button><br>
-           <div id="descrip" class="text-left w-75">
-
-          </div>
-          <div class="text-right" id="cont">
-            <h6>Add to card</h6>
-            <button class="btn-light w-25 text-left m-1"><i class='fas fa-user-alt'></i> Members</button><br>
-            <button class="btn-light w-25 text-left m-1"><i class="fa fa-tag" aria-hidden="true"></i> labels</button><br>
-            <button class="btn-light text-left w-25 m-1"><i class='far fa-check-square'></i> Checklist</button><br>
-            <button class="btn-light text-left w-25 m-1"><i class="far fa-clock"></i> Due Date</button><br>
-            <button class="btn-light text-left w-25 m-1"><i class="fa fa-paperclip" aria-hidden="true"></i> Attachment</button><br>
-            <button class="btn-light text-left w-25 m-1"><i class="fa fa-desktop"></i> Cover</button>
-            </div>
-          </div>
-          
-          
-          </div>
-          
-        
-          
-        </div>
-      </div>
-    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/style/javascript/script.js"></script>
@@ -223,6 +146,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </body>
 
